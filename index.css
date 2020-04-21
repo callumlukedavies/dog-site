@@ -1,0 +1,20 @@
+body{
+    background-color: #eeeeee;
+}
+
+#navbar{
+    position: fixed;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+}
+
+#main-header{
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+}
+
+#main-content{
+    max-width: 100%;
+    height: auto;
+}
