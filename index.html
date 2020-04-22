@@ -4,28 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4522a48b84.js" crossorigin="anonymous"></script>
+    <script defer src = "sidemenu.js"></script>
     <title>Index page</title>
 </head>
 <body>
     <nav id = "navbar">
+        <div id = "start">
+            <i class="fas fa-bars" id = "bar"></i>
+        </div>
+        <div id = "end">
         <a href="index.html">Home</a>
         <a href="index.html">What is this?</a>
         <a href="index.html">Who made this?</a>
+        </div>
     </nav>
 
-    <div id = "main-header">
-        <h1>Dogs</h1>
+    <div class = "closed" id = "sidebar">
+        <ul>
+            <li>dog 1</li>
+            <li>dog 2</li>
+            <li>dog 3</li>
+        </ul>
     </div>
 
-    <div id = "main-content">
-        <img id = "image" src = "images\nova.jpg" alt = "Nova Scotia Duck Tolling Retriever">
-    </div>
-    
-    <i class="fas fa-bars"></i>
+    <main id = "landing-page">
+        <div id = "main-header">
+            <h1>Dogs</h1>
+        </div>
 
-    <div id = "side-bar">
-        <p>well, its working</p>
-    </div>
+        <div id = "image-container">
+            <img id = "image" src = "images\nova.jpg" alt = "Nova Scotia Duck Tolling Retriever">
+        </div>
+
+        <div id = "text-container">
+            <p>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. 
+                Aenean vitae interdum neque.
+                 Nulla elementum est velit,
+                et elementum augue aliquam 
+                et. Cras quis vehicula ex, ut 
+                lacinia lorem. Sed leo mauris, 
+                posuere sed elementum ac, egestas
+                vitae libero. Quisque sollicitudin 
+                vulputate metus, ac efficitur turpis 
+                hendrerit sed. Etiam sed lorem in eros 
+                molestie placerat ut nec erat. Nunc ac 
+                metus ornare, molestie erat at, molestie 
+                magna. Sed elementum lacinia leo, quis 
+                pulvinar leo semper nec. Sed turpis odio, 
+                pellentesque non quam ac, cursus congue 
+                lorem. Phasellus eget erat gravida metus 
+                interdum sollicitudin sed at erat. Praesent 
+                scelerisque arcu sed pharetra lobortis. 
+                Phasellus efficitur aliquam leo ut sagittis.
+                Praesent tristique consequat laoreet. Donec 
+                lobortis dui id ante aliquet rhoncus. Donec 
+                blandit, diam vitae tempus molestie, massa 
+                metus eleifend nulla, sed blandit justo erat 
+                at mi. Nulla in libero ut risus ullamcorper 
+                molestie a nec libero.
+            </p>
+        </div>
+    </main>
 
 </body>
 </html>
