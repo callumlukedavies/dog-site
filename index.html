@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4522a48b84.js" crossorigin="anonymous"></script>
     <script defer src = "sidemenu.js"></script>
     <title>Index page</title>
 </head>
 <body>
     <nav id = "navbar">
-        <div id = "start">
-            <i class="fas fa-bars" id = "bar"></i>
+        <div id ="start">
+        <i class="fas fa-bars" id = "bar"></i>
+        </div>
+        <div id = "middle">
+            <h2>Dog</h2>
+            <img src = "images/logo.png" id = "logo">
+            <h2>Site</h2>
         </div>
         <div id = "end">
         <a href="index.html">Home</a>
-        <a href="index.html">What is this?</a>
-        <a href="index.html">Who made this?</a>
         </div>
     </nav>
 
-    <div class = "closed" id = "sidebar">
+    <div class = "closed" id = "sidebar" onmouseleave="openMenu()">
+        <h3>Dogs: A-Z</h3>
         <ul>
-            <li>dog 1</li>
-            <li>dog 2</li>
-            <li>dog 3</li>
+            <li>Affenpinscher</li>
+            <li>Dalmation</li>
+            <li>Saluki</li>
+            <li>Great Dane</li>
+            <li>Nova Scotia Duck Tolling Retriever</li>
+            <li>Dachshund</li>
+            <li>Doberman Pinscher</li>
+            <li>BloodHound</li>
+            <li>Giant Schnauzer</li>
         </ul>
     </div>
 
-    <main id = "landing-page">
-        <div id = "main-header">
-            <h1>Dogs</h1>
-        </div>
+    <div id = "landing-page">
+       
 
-        <div id = "image-container">
+        <div id = "image-container"  onmouseover="decreaseBrightness()" onmouseleave = "increaseBrightness()">
+            <div id = "main-header">
+                <h1>DogSite: Your local dog beastiary</h1>
+            </div>
             <img id = "image" src = "images\nova.jpg" alt = "Nova Scotia Duck Tolling Retriever">
         </div>
 
@@ -67,7 +79,7 @@
                 molestie a nec libero.
             </p>
         </div>
-    </main>
+    </div>
 
 </body>
 </html>
