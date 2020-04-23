@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+/* navbar and elements */
+#navbar{
+    background-color: white;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    padding-bottom: 5px;
+}
+
+#start{
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    align-items: center;
+    padding: 0 0 0 15px;
+}
+
+#middle{
+    display: flex;
+    justify-self: center;
+}
+
+#middle h2{
+    margin: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
+    font-family: Helvetica, sans-serif;
+}
+
+#end{
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+    align-items: center;
+} 
+
+#end a{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.fas{
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+#logo{
+    height: 70px;
+    width: 60px;
+}
+
+/* sidebar */
+
+.closed{
+    background-color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+    width:200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:70px;
+    z-index: 2;
+    margin-left: -200px;
+    transition: 0.5s;
+    overflow-y: visible;
+}
+
+.open{
+    background-color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+    width:200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:70px;
+    margin-left: 0;
+    animation-duration: 0.5s;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+#sidebar ul{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+#sidebar ul li{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.5s;
+    padding: 10px 0 10px 10px;
+}
+
+#sidebar ul li:hover{
+    background-color: #c0baba;
+    transition: 0.5s;
+}
+
+#sidebar h3{
+    
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+}
+
+
+
+/* main content */
+
+#main{
+    height: auto;
+    /* width: 100%; */
+    min-width: 100%;
+    position: absolute;
+    top: 80px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+#image-container{
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    max-width: 100%;
+}
+
+#section1{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+#section2{
+    background-color: crimson;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+#section4{
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+#para1{
+    height: 500px;
+    width: 400px;
+    background-color: blue;
+}
+
+/* slideshow */
+
+.slideshow{
+    background-color: cyan;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slidenav{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.butt{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left:0;
+}
+
+#r2:checked ~ .s1{
+    margin-left:-20%;
+}
+
+#r3:checked ~ .s1{
+    margin:-40%;
+}
+
+#r4:checked ~ .s1{
+    margin:-60%;
+}
+
+
+@media(max-width:700px){
+    #main{
+        /* width: 100%; */
+    }
+
+    #section1{
+        /* background-color: cadetblue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 800px;
+        width: 100%;
+    }
+
+    #section2{
+        /* background-color: cadetblue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 800px;
+        width: 100%;
+    }
+
+    #section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+    }
+
+}
