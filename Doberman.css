@@ -144,14 +144,41 @@ body{
 }
 
 #image-container{
-    background-color: black;
-    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* width: 100%; */
+    width: 100vw;
     height: 700px;
+    /* max-width: 100%; */
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+#image-container h2{
+    width: 1100px;
     max-width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#image{
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
 }
 
 #section1{
-    background-color: cadetblue;
+    background-color: rgb(174, 255, 194);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -161,7 +188,7 @@ body{
 }
 
 #section2{
-    background-color: crimson;
+    background-color: rgb(174, 255, 194);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -173,7 +200,28 @@ body{
 .box{
     height: 200px;
     width: 200px;
-    background-color: blue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 10px 0 0 rgb(139, 204, 155);
+}
+
+#box-wrapper{
+    display: none;
+}
+
+#invisible1{
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    /* visibility: hidden; */
+}
+
+.box-image{
+    height: auto;
+    max-width: 100%;
+    margin: 10px 10px 10px 10px;
 }
 
 #section4{
@@ -195,7 +243,7 @@ body{
 /* slideshow */
 
 .slideshow{
-    background-color: cyan;
+    /* background-color: cyan; */
     width: 700px;
     height: 400px;
     overflow: hidden;
